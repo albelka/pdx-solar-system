@@ -22,7 +22,7 @@ _{This is a detailed description of your application. Its purpose and usage.  Gi
 * _The program should be media responsive_
   * _Example in: User opens website on phone_
   * _Example out: Website looks good_  
-* _The program should have cross browser compatibilty_
+* _The program should have cross browser compatibility_
   * _Example in: User opens website in FireFox_
   * _Example out: Website looks good_
 
