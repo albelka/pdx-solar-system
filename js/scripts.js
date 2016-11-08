@@ -214,6 +214,18 @@ Sol.satellites = [Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune,
 CelestialBody.prototype.quickStats = function () {
   return this.bodyName;
 };
+myMap = function() {
+  var mapOptions = {
+    center: new google.maps.LatLng(45.5244733, -122.6513304),
+    zoom: 12,
+    mapTypeId: google.maps.MapTypeId.HYBRID
+  }
+  var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+  var markerMer = new google.maps.Marker({
+    position: ,
+    map: map
+  });
+}
 
 //fullstats function that returns every property?
 
@@ -234,9 +246,13 @@ $(document).ready(function() {
   //click event for displaying full info
   $("img").click(function() {
     // $().show();
-    $("#sun-hidden").fadeIn(2000);
-  });
 
+    $("#map").show();
+    myMap();
+
+    $("#sun-hidden").fadeIn(2000);
+
+  });
 
 
 });

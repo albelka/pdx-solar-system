@@ -1,4 +1,4 @@
-img {
+.container img {
   max-width: 100px;
   max-height: 100px;
 }
@@ -13,6 +13,13 @@ body {
 }
 #sun-hidden {
   display: none;
+}
+
+#map {
+  height: 500px;
+  width: 500px;
+display: none;
+
 }
 /*#map {
   background-image: url("../img/PDXmap.png");
