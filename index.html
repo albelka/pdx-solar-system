@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/scripts.js"></script>
     <title>PDX SOLAR SYSTEM</title>
   </head>
   <body>
-    <h1>Self-guided tour of the Portland Solar System</h1>
-    <p>A model of the Solar System has been constructed to scale in Portland, Oregon. The Sun and all the planets are shown to scale. The Sun is the orange chimney at OMSI, approximately 9 feet, 1 inch in diameter. The planets and our moon are spheres of mineral or concrete. They are placed throughout the city at scale distances from the Sun. The Portland Solar System covers 150 square miles in Portland.
+    <h1>PDX Solar System</h1>
+    <!-- <p>A model of the Solar System has been constructed to scale in Portland, Oregon. The Sun and all the planets are shown to scale. The Sun is the orange chimney at OMSI, approximately 9 feet, 1 inch in diameter. The planets and our moon are spheres of mineral or concrete. They are placed throughout the city at scale distances from the Sun. The Portland Solar System covers 150 square miles in Portland.
     Sites have been chosen for accurate scale distance from the Sun, as well as for scenic views of the city. Touring the Solar System in Portland provides both an experience of the immense distances
     and powerful gravitational forces of our solar system, and a sense of the variety and beauty of Portland landscapes and panoramic views.
     The Sun and the first five planets can be seen on a walking tour. The remaining planets can be visited by car, bicycle, or bus.
@@ -18,55 +18,79 @@
     To start the tour, get yourself to OMSI, on the east bank of the Willamette River. From downtown, drive, walk or bike across the Hawthorne Bridge, or take the 83 bus from 5th and Salmon. If you use the bus for the tour, get a $4 all-day pass at the Tri-Met ticket machine at Pioneer Square or 5th & Salmon. Hang on to the ticket, though, because every bus driver asks you to do something different with it.
     Once at OMSI, walk to the Northwest corner of the generator building to see the small black plate identifying the sun. To see the chimney, which represents the sun, follow the curved pathway above
     the riverbank to the Southwest corner of the generator building and look up.</p>
-    <div id="sun-hidden">
-    <div class="container">
-      <img src="img/sun.jpg" alt="an image of the sun">
+    <!-- <div class="container"> -->
+      <div class="row">
+        <div class="col-md-1">
+      <img src="img/sun.jpg" alt="an image of the sun" title="Sun">
       <div id="sun-hidden">
         <p>SUN</p>
+        </div> 
       </div>
-      <img src="img/mercury.jpg" alt="an image of mercury">
-      <div id="mercury-hidden">
-        <p>MERCURY</p>
+      <div class="col-md-1">
+        <img src="img/mercury.jpg" alt="an image of mercury" title="Mercury">
+        <div id="mercury-hidden">
+          <p>MERCURY</p>
+        </div>
       </div>
-      <img src="img/venus.jpg" alt="an image of the venus">
-      <div id="venus-hidden">
-        <p>VENUS</p>
+      <div class="col-md-1">
+        <img src="img/venus.jpg" alt="an image of the venus" title="Venus">
+        <div id="venus-hidden">
+          <p>VENUS</p>
+        </div>
       </div>
-      <img src="img/earth.jpg" alt="an image of the earth">
-      <div id="earth-hidden">
-        <p>EARTH and MOON</p>
+      <div class="col-md-1">
+        <img src="img/earth.jpg" alt="an image of the earth" title="Earth">
+        <div id="earth-hidden">
+          <p>EARTH</p>
+        </div>
       </div>
-      <img src="img/mars.jpg" alt="an image of mars">
-      <div id="mars-hidden">
-        <p>MARS</p>
+      <div class="col-md-1">
+        <img src="img/mars.jpg" alt="an image of mars" title="Mars">
+        <div id="mars-hidden">
+          <p>MARS</p>
+        </div>
       </div>
-      <img src="img/jupiter.png" alt="an image of jupiter">
-      <div id="jupiter-hidden">
-        <p>JUPITER</p>
+      <div class="col-md-1">
+        <img src="img/jupiter.png" alt="an image of jupiter" title="Jupiter">
+        <div id="jupiter-hidden">
+          <p>JUPITER</p>
+        </div>
       </div>
-      <img src="img/saturn.jpg" alt="an image of saturn">
-      <div id="saturn-hidden">
-        <p>SATURN</p>
+      <div class="col-md-1">
+        <img src="img/saturn.jpg" alt="an image of saturn" title="Saturn">
+        <div id="saturn-hidden">
+          <p>SATURN</p>
+        </div>
       </div>
-      <img src="img/ismene.jpg" alt="an image of ismene asteroid">
-      <div id="ismene-hidden">
-        <p>ISMENE</p>
+      <div class="col-md-1">
+        <img src="img/ismene.jpg" alt="an image of ismene asteroid" title="Ismene">
+        <div id="ismene-hidden">
+          <p>ISMENE</p>
+        </div>
       </div>
-      <img src="img/uranus.jpg" alt="an image of uranus">
-      <div id="uranus-hidden">
-        <p>URANUS</p>
+      <div class="col-md-1">
+        <img src="img/uranus.jpg" alt="an image of uranus" title="Uranus">
+        <div id="uranus-hidden">
+          <p>URANUS</p>
+        </div>
       </div>
-      <img src="img/neptune.jpg" alt="an image of neptune">
-      <div id="neptune-hidden">
-        <p>NEPTUNE</p>
+      <div class="col-md-1">
+        <img src="img/neptune.jpg" alt="an image of neptune" title="Neptune">
+        <div id="neptune-hidden">
+          <p>NEPTUNE</p>
+        </div>
       </div>
-      <img src="img/pluto.jpg" alt="an image of pluto">
-      <div id="pluto-hidden">
-        <p>PLUTO AND CHARON</p>
+
+      <div class="col-md-1">
+        <img src="img/pluto.jpg" alt="an image of pluto" title="Pluto">
+        <div id="pluto-hidden">
+          <p>PLUTO AND CHARON</p>
+        </div>
+      </div>
       </div>
     </div>
-
     <div class="container" id="map">
     </div>
+
   </body>
 </html>
