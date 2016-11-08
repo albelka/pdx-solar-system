@@ -36,7 +36,7 @@ Venus.bodyName = "Venus";
 Venus.orbits = Sol;
 Venus.satellites = [];
 Venus.circumference = 23627;
-Venus.distance = 21402600;
+Venus.distance = 67000000;
 Venus.pdxLocation = "img/mercuryMap.jpg";
 //Earth and Moon
 var Luna = new CelestialBody();
@@ -52,7 +52,7 @@ Earth.bodyName = "Earth";
 Earth.orbits = Sol;
 Earth.satellites = [Luna];
 Earth.circumference = 9525.1;
-Earth.distance = 36000000;
+Earth.distance = 93000000;
 Earth.pdxLocation = "img/earthMap.jpg";
 //Mars and mooons
 var Deimos = new CelestialBody();
@@ -76,7 +76,7 @@ Mars.bodyName = "Mars";
 Mars.orbits = Sol;
 Mars.satellites = [Deimos, Phobos];
 Mars.circumference = 9525.1;
-Mars.distance = 36000000;
+Mars.distance = 140000000;
 Mars.pdxLocation = "img/mercuryMap.jpg";
 
 //Jupiter and moooons
@@ -118,7 +118,7 @@ Jupiter.bodyName = "Jupiter";
 Jupiter.orbits = Sol;
 Jupiter.satellites = [Europa, Ganymede, Callisto, Io];
 Jupiter.circumference = 272946;
-Jupiter.distance = 483800000;
+Jupiter.distance = 483000000;
 Jupiter.pdxLocation = "img/mercuryMap.jpg";
 
 //Saturn and moon
@@ -136,7 +136,7 @@ Saturn.bodyName = "Saturn";
 Saturn.orbits = Sol;
 Saturn.satellites = [Titan];
 Saturn.circumference = 235298;
-Saturn.distance = 888200000;
+Saturn.distance = 483000000;
 Saturn.pdxLocation = "img/mercuryMap.jpg";
 
 //Ismene
@@ -170,7 +170,7 @@ Uranus.bodyName = "Uranus";
 Uranus.orbits = Sol;
 Uranus.satellites = [Oberon, Titania];
 Uranus.circumference = 9525.1;
-Uranus.distance = 36000000;
+Uranus.distance = 483000000;
 Uranus.pdxLocation = "img/mercuryMap.jpg";
 
 //Neptune and moon
@@ -204,7 +204,7 @@ Pluto.bodyName = "Pluto";
 Pluto.orbits = Sol;
 Pluto.satellites = [Charon];
 Pluto.circumference = 4494;
-Pluto.distance = 3670000000;
+Pluto.distance = 3700000000;
 Pluto.pdxLocation = "img/mercuryMap.jpg";
 
 //Sun satellites defined now that they're created
@@ -214,81 +214,17 @@ Sol.satellites = [Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune,
 CelestialBody.prototype.quickStats = function () {
   return this.bodyName;
 };
-myMap = function() {
-  var mapOptions = {
-    center: new google.maps.LatLng(45.5244733, -122.6513304),
-    zoom: 11,
-    mapTypeId: google.maps.MapTypeId.HYBRID
-  }
-  var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-  var markerOMSI = new google.maps.Marker({
-    position: new google.maps.LatLng(45.5084, -122.666),
-    map: map,
-  });
-
-  var markerMerc = new google.maps.Marker({
-    position: new google.maps.LatLng(45.5094, -122.666916),
-    map: map,
-  });
-
-  var markerVenus = new google.maps.Marker({
-    position: new google.maps.LatLng(45.5102973, -122.66655),
-    map: map,
-  });
-
-  var markerEarth = new google.maps.Marker({
-    position: new google.maps.LatLng(45.5108753, -122.6670293),
-    map: map,
-  });
-
-  var markerMars = new google.maps.Marker({
-    position: new google.maps.LatLng(45.5121377, -122.6679734),
-    map: map,
-  });
-
-  var markerJupiter = new google.maps.Marker({
-    position: new google.maps.LatLng(45.5218451, -122.6660479),
-    map: map,
-  });
-
-  var markerSaturn = new google.maps.Marker({
-    position: new google.maps.LatLng(45.4755784, -122.6685779),
-    map: map,
-  });
-
-  var markerIsmene = new google.maps.Marker({
-    position: new google.maps.LatLng(45.5177771, -122.6537634),
-    map: map,
-  });
-
-  var markerUranus = new google.maps.Marker({
-    position: new google.maps.LatLng(45.5125688, -122.5933671),
-    map: map,
-  });
-
-  var markerNeptune = new google.maps.Marker({
-    position: new google.maps.LatLng(45.5467316, -122.5660408),
-    map: map,
-  });
-
-  var markerPluto = new google.maps.Marker({
-    position: new google.maps.LatLng(45.570384, -122.726872),
-    map: map,
-  });
-
-
-
-
-
-}
 
 //fullstats function that returns every property?
 
 //frontend
 $(document).ready(function() {
 
-  //initialize map
-  myMap();
+
+
+
+
+
 
   //hover event for displaying quickstats
   //img is placeholder for icon object
@@ -302,9 +238,14 @@ $(document).ready(function() {
   //
   // });
   //click event for displaying full info
-  $("#sun-navbar").click(function() {
-    $(".planets-hidden").fadeOut(2000, function(){
-      $("#sun-hidden").fadeIn(2000);
+  // $("#sun-navbar").click(function() {
+  //   $(".planets-hidden").fadeOut(2000, function(){
+  //     $("#sun-hidden").fadeIn(2000);
+  //     });
+  //   });
+    $("#sun-navbar, #sun-hidden").click(function() {
+      $("#sun-navbar").fadeToggle(750);
+        $("#sun-hidden").fadeToggle(750);
       });
     });
   $("#mercury-navbar").click(function() {
@@ -352,4 +293,3 @@ $(document).ready(function() {
   $("#ismene-navbar").click(function() {
     $("#ismene-hidden").fadeIn(2000);
   });
-});
