@@ -1,5 +1,5 @@
 //backend
-//google maps
+
 
 
 
@@ -220,65 +220,164 @@ myMap = function() {
     zoom: 11,
     mapTypeId: google.maps.MapTypeId.HYBRID
   }
+  //create map object
   var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+  //OMSI marker object
   var markerOMSI = new google.maps.Marker({
     position: new google.maps.LatLng(45.5084, -122.666),
     map: map,
+    title: "OMSI"
+  });
+  var omsiString = "";
+  var omsiInfoWindow = new google.maps.InfoWindow({
+    content: omsiString
+  });
+  markerOMSI.addListener("click", function() {
+    omsiInfoWindow.open(map, markerOMSI)
   });
 
-  var markerMerc = new google.maps.Marker({
+  // Mercury marker object
+  var markerMercury = new google.maps.Marker({
     position: new google.maps.LatLng(45.5094, -122.666916),
     map: map,
+    title: "Mercury"
+  });
+  var mercuryString = "";
+  var mercuryInfoWindow = new google.maps.InfoWindow({
+    content: mercuryString
+  });
+  markerMercury.addListener("click", function() {
+    mercuryInfoWindow.open(map, markerMercury)
   });
 
+  // Venus marker object
   var markerVenus = new google.maps.Marker({
     position: new google.maps.LatLng(45.5102973, -122.66655),
     map: map,
+    title: "Venus"
+  });
+  var venusString = "";
+  var venusInfoWindow = new google.maps.InfoWindow({
+    content: venusString
+  });
+  markerVenus.addListener("click", function() {
+    venusInfoWindow.open(map, markerVenus)
   });
 
+
+  // Earth marker object
   var markerEarth = new google.maps.Marker({
     position: new google.maps.LatLng(45.5108753, -122.6670293),
     map: map,
+    title: "Earth"
+  });
+  var earthString = "";
+  var earthInfoWindow = new google.maps.InfoWindow({
+    content: earthString
+  });
+  markerEarth.addListener("click", function() {
+    earthInfoWindow.open(map, markerEarth)
   });
 
+
+  // Mars marker object
   var markerMars = new google.maps.Marker({
     position: new google.maps.LatLng(45.5121377, -122.6679734),
     map: map,
+    title: "Mars"
+  });
+  var marsString = "";
+  var marsInfoWindow = new google.maps.InfoWindow({
+    content: marsString
+  });
+  markerMars.addListener("click", function() {
+    marsInfoWindow.open(map, markerMars)
   });
 
+  // Jupiter marker object
   var markerJupiter = new google.maps.Marker({
     position: new google.maps.LatLng(45.5218451, -122.6660479),
     map: map,
+    title: "Jupiter"
+  });
+  var jupiterString = "";
+  var jupiterInfoWindow = new google.maps.InfoWindow({
+    content: jupiterString
+  });
+  markerJupiter.addListener("click", function() {
+    jupiterInfoWindow.open(map, markerJupiter)
   });
 
+  // Saturn marker object
   var markerSaturn = new google.maps.Marker({
     position: new google.maps.LatLng(45.4755784, -122.6685779),
     map: map,
+    title: "Saturn"
+  });
+  var saturnString = "";
+  var saturnInfoWindow = new google.maps.InfoWindow({
+    content: saturnString
+  });
+  markerSaturn.addListener("click", function() {
+    saturnInfoWindow.open(map, markerSaturn)
   });
 
+  // Ismene marker object
   var markerIsmene = new google.maps.Marker({
     position: new google.maps.LatLng(45.5177771, -122.6537634),
     map: map,
+    title: "Ismene"
+  });
+  var ismeneString = "";
+  var ismeneInfoWindow = new google.maps.InfoWindow({
+    content: ismeneString
+  });
+  markerIsmene.addListener("click", function() {
+    ismeneInfoWindow.open(map, markerIsmene)
   });
 
+  // Uranus marker object
   var markerUranus = new google.maps.Marker({
     position: new google.maps.LatLng(45.5125688, -122.5933671),
     map: map,
+    title: "Uranus"
+  });
+  var uranusString = "";
+  var uranusInfoWindow = new google.maps.InfoWindow({
+    content: uranusString
+  });
+  markerUranus.addListener("click", function() {
+    uranusInfoWindow.open(map, markerUranus)
   });
 
+  // Neptune marker object
   var markerNeptune = new google.maps.Marker({
     position: new google.maps.LatLng(45.5467316, -122.5660408),
     map: map,
+    title: "Neptune"
+  });
+  var neptuneString = "";
+  var neptuneInfoWindow = new google.maps.InfoWindow({
+    content: neptuneString
+  });
+  markerNeptune.addListener("click", function() {
+    neptuneInfoWindow.open(map, markerNeptune)
   });
 
+  // Pluto marker object
   var markerPluto = new google.maps.Marker({
     position: new google.maps.LatLng(45.570384, -122.726872),
     map: map,
+    title: "Pluto"
   });
-
-
-
-
+  var plutoString = "";
+  var plutoInfoWindow = new google.maps.InfoWindow({
+    content: plutoString
+  });
+  markerPluto.addListener("click", function() {
+    plutoInfoWindow.open(map, markerPluto)
+  });
 
 }
 
@@ -286,9 +385,7 @@ myMap = function() {
 
 //frontend
 $(document).ready(function() {
-
   //initialize map
-  myMap();
 
   //hover event for displaying quickstats
   //img is placeholder for icon object
@@ -303,8 +400,11 @@ $(document).ready(function() {
   // });
   //click event for displaying full info
   $("#sun-navbar").click(function() {
+    console.log("CLICK");
     $(".planets-hidden").fadeOut(2000, function(){
       $("#sun-hidden").fadeIn(2000);
+      $("#map").show();
+      myMap();
       });
     });
   $("#mercury-navbar").click(function() {
