@@ -1,6 +1,6 @@
-# _{Application Name}_
+# _PDX Solar System Website_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _An infrmative site that helps the user explore Portland while learning about the solar system, 11.8.16_
 
 #### By _**{List of contributors}**_
 
@@ -13,21 +13,27 @@ _{This is a detailed description of your application. Its purpose and usage.  Gi
 * _The program should have attractive content_
   * _Example in: User opens page_
   * _Example out: User says "neat!"_
-* _The program should have clickable icons overlaid on top of a map of portland_
-  * _Example in: User clicks sun icon_
-  * _Example out: Page displays sun image and text_
-* _The program should have a hover effect that shows quick info about a planet_
-  * _Example in: User hovers over sun icon_
-  * _Example out: Page displays basic stats in a small pop-up_
 * _The program should be media responsive_
   * _Example in: User opens website on phone_
   * _Example out: Website looks good_  
 * _The program should have cross browser compatibility_
   * _Example in: User opens website in FireFox_
   * _Example out: Website looks good_
+  * _Navbar made up of planets_
+  * _navbar planets bring up info and large picture when clicked_
+  * _click something to bring up full map with all planets and_
+* _Maps API_
+  * _a marker for each planet_
+  * _name on hover for each planet_
+  * _infowindow on click for each planet_
+  * _orbits shown_
+  * _The program should have clickable icons overlaid on top of a map of portland_
+    * _Example in: User clicks sun icon_
+    * _Example out: Page displays sun image and text_
+  * _The program should have a hover effect that shows quick info about a planet_
+    * _Example in: User hovers over sun icon_
+    * _Example out: Page displays basic stats in a small pop-up_
 
-
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
 
 ## Known Bugs
 
@@ -43,6 +49,6 @@ _{Tell me about the languages and tools you used to create this app. Assume that
 
 ### License
 
-*{Determine the license under which this application can be used.  See below for more details on licensing.}*
+*MIT*
 
 Copyright (c) 2016 **_{List of contributors or company name}_**

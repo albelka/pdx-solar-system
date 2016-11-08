@@ -1,7 +1,9 @@
 img {
   width: 50%;
 }
-
+#sun-hidden {
+  display: none;
+}
 /*#map {
   background-image: url("../img/PDXmap.png");
   height: 600px;

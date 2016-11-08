@@ -170,7 +170,6 @@ Uranus.circumference = 9525.1;
 Uranus.distance = 36000000;
 Uranus.pdxLocation = "img/mercuryMap.jpg";
 
-
 //Neptune and moon
 var Triton = new CelestialBody();
 Triton.bodyName = "Triton";
@@ -219,10 +218,15 @@ CelestialBody.prototype.quickStats = function () {
 $(document).ready(function() {
 
   //hover event for displaying quickstats
-  $("#sun-icon").hover(function() {
+  //img is placeholder for icon object
+  $("img").hover(function() {
     $("#sun-hidden").show();
   }, function() {
-    $(this).hide();
+    $("#sun-hidden").hide();
+  });
+
+  $("img").click(function() {
+
   });
   //click event for displaying full info
 
