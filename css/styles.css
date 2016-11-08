@@ -11,7 +11,9 @@ h1 {
 body {
   background-color: black;
 }
-
+#sun-hidden {
+  display: none;
+}
 /*#map {
   background-image: url("../img/PDXmap.png");
   height: 600px;
