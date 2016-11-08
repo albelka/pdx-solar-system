@@ -227,9 +227,10 @@ myMap = function() {
   var markerOMSI = new google.maps.Marker({
     position: new google.maps.LatLng(45.5084, -122.666),
     map: map,
-    title: "OMSI"
+    title: "OMSI",
+    icon: "img/small-icons/sun-icon.png"
   });
-  var omsiString = "";
+  var omsiString = "I am a mass of incandescent gas, a gigantic nuke-lee-ear furnace!";
   var omsiInfoWindow = new google.maps.InfoWindow({
     content: omsiString
   });
@@ -241,7 +242,9 @@ myMap = function() {
   var markerMercury = new google.maps.Marker({
     position: new google.maps.LatLng(45.5094, -122.666916),
     map: map,
-    title: "Mercury"
+    title: "Mercury",
+    icon: "img/small-icons/mercury-icon.png"
+
   });
   var mercuryString = "";
   var mercuryInfoWindow = new google.maps.InfoWindow({
@@ -255,7 +258,9 @@ myMap = function() {
   var markerVenus = new google.maps.Marker({
     position: new google.maps.LatLng(45.5102973, -122.66655),
     map: map,
-    title: "Venus"
+    title: "Venus",
+    icon: "img/small-icons/venus-icon.png"
+
   });
   var venusString = "";
   var venusInfoWindow = new google.maps.InfoWindow({
@@ -270,7 +275,9 @@ myMap = function() {
   var markerEarth = new google.maps.Marker({
     position: new google.maps.LatLng(45.5108753, -122.6670293),
     map: map,
-    title: "Earth"
+    title: "Earth",
+    icon: "img/small-icons/earth-icon.png"
+
   });
   var earthString = "";
   var earthInfoWindow = new google.maps.InfoWindow({
@@ -285,7 +292,8 @@ myMap = function() {
   var markerMars = new google.maps.Marker({
     position: new google.maps.LatLng(45.5121377, -122.6679734),
     map: map,
-    title: "Mars"
+    title: "Mars",
+    icon: "img/small-icons/mars-icon.png"
   });
   var marsString = "";
   var marsInfoWindow = new google.maps.InfoWindow({
@@ -299,7 +307,8 @@ myMap = function() {
   var markerJupiter = new google.maps.Marker({
     position: new google.maps.LatLng(45.5218451, -122.6660479),
     map: map,
-    title: "Jupiter"
+    title: "Jupiter",
+    icon: "img/small-icons/jupiter-icon.png"
   });
   var jupiterString = "";
   var jupiterInfoWindow = new google.maps.InfoWindow({
@@ -313,7 +322,8 @@ myMap = function() {
   var markerSaturn = new google.maps.Marker({
     position: new google.maps.LatLng(45.4755784, -122.6685779),
     map: map,
-    title: "Saturn"
+    title: "Saturn",
+    icon: "img/small-icons/saturn-icon.png"
   });
   var saturnString = "";
   var saturnInfoWindow = new google.maps.InfoWindow({
@@ -327,7 +337,8 @@ myMap = function() {
   var markerIsmene = new google.maps.Marker({
     position: new google.maps.LatLng(45.5177771, -122.6537634),
     map: map,
-    title: "Ismene"
+    title: "Ismene",
+    icon: "img/small-icons/ismene-icon.png"
   });
   var ismeneString = "";
   var ismeneInfoWindow = new google.maps.InfoWindow({
@@ -341,7 +352,9 @@ myMap = function() {
   var markerUranus = new google.maps.Marker({
     position: new google.maps.LatLng(45.5125688, -122.5933671),
     map: map,
-    title: "Uranus"
+    title: "Uranus",
+    icon: "img/small-icons/uranus-icon.png"
+
   });
   var uranusString = "";
   var uranusInfoWindow = new google.maps.InfoWindow({
@@ -355,7 +368,9 @@ myMap = function() {
   var markerNeptune = new google.maps.Marker({
     position: new google.maps.LatLng(45.5467316, -122.5660408),
     map: map,
-    title: "Neptune"
+    title: "Neptune",
+    icon: "img/small-icons/neptune-icon.png"
+
   });
   var neptuneString = "";
   var neptuneInfoWindow = new google.maps.InfoWindow({
@@ -369,7 +384,9 @@ myMap = function() {
   var markerPluto = new google.maps.Marker({
     position: new google.maps.LatLng(45.570384, -122.726872),
     map: map,
-    title: "Pluto"
+    title: "Pluto",
+    icon: "img/small-icons/pluto-icon.png"
+
   });
   var plutoString = "";
   var plutoInfoWindow = new google.maps.InfoWindow({
