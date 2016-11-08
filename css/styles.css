@@ -1,4 +1,4 @@
-.container img {
+.planets-navbar img {
   max-width: 100px;
   max-height: 100px;
 }
@@ -11,16 +11,66 @@ h1 {
 body {
   background-color: black;
 }
+
+.planets-hidden {
+  display: none;
+}
+
 #sun-hidden {
   display: none;
 }
+
 
 #map {
   height: 500px;
   width: 500px;
 display: none;
-
 }
+
+#mercury-hidden {
+  display: none;
+}
+
+#venus-hidden {
+  display: none;
+}
+
+#earth-hidden {
+  display: none;
+}
+
+#mars-hidden {
+  display: none;
+}
+
+#jupiter-hidden {
+  display: none;
+}
+
+#saturn-hidden {
+  display: none;
+}
+
+#uranus-hidden {
+  display: none;
+}
+
+#neptune-hidden {
+  display: none;
+}
+
+#pluto-hidden {
+  display: none;
+}
+
+#ismene-hidden {
+  display: none;
+}
+
+#moon-hidden {
+  display: none;
+}
+
 /*#map {
   background-image: url("../img/PDXmap.png");
   height: 600px;
