@@ -420,6 +420,7 @@ $(document).ready(function() {
   //
   // });
   //click event for displaying full info
+
   $("#sun-navbar").click(function() {
     $(".planets-hidden").fadeOut(2000, function(){
       $("#sun-hidden").fadeIn(2000);
@@ -427,6 +428,21 @@ $(document).ready(function() {
       myMap();
       });
     });
+
+// $("#sun-navbar, #sun-hidden").click(function() {
+//   $("#sun-navbar").toggle();
+//     $("#sun-hidden").toggle();
+//     $("#map").show();
+//     myMap();
+//    });
+  // $("#sun-navbar").click(function() {
+  //   console.log("CLICK");
+  //   $(".planets-hidden").fadeOut(2000, function(){
+  //     $("#sun-hidden").fadeIn(2000);
+  //     $("#map").show();
+  //     myMap();
+  //     });
+  //   });
   $("#mercury-navbar").click(function() {
     $(".planets-hidden").fadeOut(2000, function(){
       $("#mercury-hidden").fadeIn(2000);
@@ -472,4 +488,5 @@ $(document).ready(function() {
   $("#ismene-navbar").click(function() {
     $("#ismene-hidden").fadeIn(2000);
   });
-});
+
+   });
