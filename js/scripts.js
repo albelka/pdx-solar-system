@@ -1,4 +1,7 @@
 //backend
+//google maps
+
+
 
 //Constructor for celestial bodies
 var CelestialBody = function() {
@@ -219,16 +222,20 @@ $(document).ready(function() {
 
   //hover event for displaying quickstats
   //img is placeholder for icon object
-  $("img").hover(function() {
-    $("#sun-hidden").show();
-  }, function() {
-    $("#sun-hidden").hide();
-  });
+  // $("img").hover(function() {
+  //   $("#sun-hidden").show();
+  // }, function() {
+  //   $("#sun-hidden").hide();
+  // });
 
-  $("img").click(function() {
-
-  });
+  // $("img").click(function() {
+  //
+  // });
   //click event for displaying full info
+  $("img").click(function() {
+    // $().show();
+    $("#sun-hidden").fadeIn(2000);
+  });
 
 
 

@@ -1,6 +1,6 @@
 # _PDX Solar System Website_
 
-#### _An infrmative site that helps the user explore Portland while learning about the solar system, 11.8.16_
+#### _An informative site that helps the user explore Portland while learning about the solar system, 11.8.16_
 
 #### By _**{List of contributors}**_
 
@@ -20,7 +20,7 @@ _{This is a detailed description of your application. Its purpose and usage.  Gi
   * _Example in: User opens website in FireFox_
   * _Example out: Website looks good_
   * _Navbar made up of planets_
-  * _navbar planets bring up info and large picture when clicked_
+  * _Navbar planets bring up info and large picture when clicked_
   * _click something to bring up full map with all planets and_
 * _Maps API_
   * _a marker for each planet_
