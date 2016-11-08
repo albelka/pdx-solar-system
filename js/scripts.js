@@ -262,7 +262,7 @@ myMap = function() {
     icon: "img/small-icons/venus-icon.png"
 
   });
-  var venusString = "";
+  var venusString = "Venus is the hottest planet in the solar system.";
   var venusInfoWindow = new google.maps.InfoWindow({
     content: venusString
   });
@@ -356,7 +356,7 @@ myMap = function() {
     icon: "img/small-icons/uranus-icon.png"
 
   });
-  var uranusString = "";
+  var uranusString = "I am an ice giant.";
   var uranusInfoWindow = new google.maps.InfoWindow({
     content: uranusString
   });
@@ -372,7 +372,7 @@ myMap = function() {
     icon: "img/small-icons/neptune-icon.png"
 
   });
-  var neptuneString = "";
+  var neptuneString = "I have a very active climate.";
   var neptuneInfoWindow = new google.maps.InfoWindow({
     content: neptuneString
   });
@@ -388,7 +388,7 @@ myMap = function() {
     icon: "img/small-icons/pluto-icon.png"
 
   });
-  var plutoString = "";
+  var plutoString = "I was not discovered until 1930.";
   var plutoInfoWindow = new google.maps.InfoWindow({
     content: plutoString
   });
