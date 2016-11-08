@@ -36,7 +36,7 @@ Venus.bodyName = "Venus";
 Venus.orbits = Sol;
 Venus.satellites = [];
 Venus.circumference = 23627;
-Venus.distance = 21402600;
+Venus.distance = 67000000;
 Venus.pdxLocation = "img/mercuryMap.jpg";
 //Earth and Moon
 var Luna = new CelestialBody();
@@ -52,7 +52,7 @@ Earth.bodyName = "Earth";
 Earth.orbits = Sol;
 Earth.satellites = [Luna];
 Earth.circumference = 9525.1;
-Earth.distance = 36000000;
+Earth.distance = 93000000;
 Earth.pdxLocation = "img/earthMap.jpg";
 //Mars and mooons
 var Deimos = new CelestialBody();
@@ -76,7 +76,7 @@ Mars.bodyName = "Mars";
 Mars.orbits = Sol;
 Mars.satellites = [Deimos, Phobos];
 Mars.circumference = 9525.1;
-Mars.distance = 36000000;
+Mars.distance = 140000000;
 Mars.pdxLocation = "img/mercuryMap.jpg";
 
 //Jupiter and moooons
@@ -118,7 +118,7 @@ Jupiter.bodyName = "Jupiter";
 Jupiter.orbits = Sol;
 Jupiter.satellites = [Europa, Ganymede, Callisto, Io];
 Jupiter.circumference = 272946;
-Jupiter.distance = 483800000;
+Jupiter.distance = 483000000;
 Jupiter.pdxLocation = "img/mercuryMap.jpg";
 
 //Saturn and moon
@@ -136,7 +136,7 @@ Saturn.bodyName = "Saturn";
 Saturn.orbits = Sol;
 Saturn.satellites = [Titan];
 Saturn.circumference = 235298;
-Saturn.distance = 888200000;
+Saturn.distance = 483000000;
 Saturn.pdxLocation = "img/mercuryMap.jpg";
 
 //Ismene
@@ -170,7 +170,7 @@ Uranus.bodyName = "Uranus";
 Uranus.orbits = Sol;
 Uranus.satellites = [Oberon, Titania];
 Uranus.circumference = 9525.1;
-Uranus.distance = 36000000;
+Uranus.distance = 483000000;
 Uranus.pdxLocation = "img/mercuryMap.jpg";
 
 //Neptune and moon
@@ -204,7 +204,7 @@ Pluto.bodyName = "Pluto";
 Pluto.orbits = Sol;
 Pluto.satellites = [Charon];
 Pluto.circumference = 4494;
-Pluto.distance = 3670000000;
+Pluto.distance = 3700000000;
 Pluto.pdxLocation = "img/mercuryMap.jpg";
 
 //Sun satellites defined now that they're created
@@ -214,6 +214,12 @@ Sol.satellites = [Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune,
 CelestialBody.prototype.quickStats = function () {
   return this.bodyName;
 };
+
+
+//fullstats function that returns every property?
+
+//frontend
+$(document).ready(function() {
 myMap = function() {
   var mapOptions = {
     center: new google.maps.LatLng(45.5244733, -122.6513304),
@@ -387,6 +393,7 @@ myMap = function() {
     title: "Pluto",
     icon: "img/small-icons/pluto-icon.png"
 
+
   });
   var plutoString = "I was not discovered until 1930.";
   var plutoInfoWindow = new google.maps.InfoWindow({
@@ -396,13 +403,11 @@ myMap = function() {
     plutoInfoWindow.open(map, markerPluto)
   });
 
-}
 
-//fullstats function that returns every property?
 
 //frontend
-$(document).ready(function() {
   //initialize map
+
 
   //hover event for displaying quickstats
   //img is placeholder for icon object
@@ -469,4 +474,3 @@ $(document).ready(function() {
   $("#ismene-navbar").click(function() {
     $("#ismene-hidden").fadeIn(2000);
   });
-});
