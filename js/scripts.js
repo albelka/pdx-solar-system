@@ -217,14 +217,69 @@ CelestialBody.prototype.quickStats = function () {
 myMap = function() {
   var mapOptions = {
     center: new google.maps.LatLng(45.5244733, -122.6513304),
-    zoom: 12,
+    zoom: 11,
     mapTypeId: google.maps.MapTypeId.HYBRID
   }
   var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-  var markerMer = new google.maps.Marker({
-    position: ,
-    map: map
+  var markerOMSI = new google.maps.Marker({
+    position: new google.maps.LatLng(45.5084, -122.666),
+    map: map,
   });
+
+  var markerMerc = new google.maps.Marker({
+    position: new google.maps.LatLng(45.5094, -122.666916),
+    map: map,
+  });
+
+  var markerVenus = new google.maps.Marker({
+    position: new google.maps.LatLng(45.5102973, -122.66655),
+    map: map,
+  });
+
+  var markerEarth = new google.maps.Marker({
+    position: new google.maps.LatLng(45.5108753, -122.6670293),
+    map: map,
+  });
+
+  var markerMars = new google.maps.Marker({
+    position: new google.maps.LatLng(45.5121377, -122.6679734),
+    map: map,
+  });
+
+  var markerJupiter = new google.maps.Marker({
+    position: new google.maps.LatLng(45.5218451, -122.6660479),
+    map: map,
+  });
+
+  var markerSaturn = new google.maps.Marker({
+    position: new google.maps.LatLng(45.4755784, -122.6685779),
+    map: map,
+  });
+
+  var markerIsmene = new google.maps.Marker({
+    position: new google.maps.LatLng(45.5177771, -122.6537634),
+    map: map,
+  });
+
+  var markerUranus = new google.maps.Marker({
+    position: new google.maps.LatLng(45.5125688, -122.5933671),
+    map: map,
+  });
+
+  var markerNeptune = new google.maps.Marker({
+    position: new google.maps.LatLng(45.5467316, -122.5660408),
+    map: map,
+  });
+
+  var markerPluto = new google.maps.Marker({
+    position: new google.maps.LatLng(45.570384, -122.726872),
+    map: map,
+  });
+
+
+
+
+
 }
 
 //fullstats function that returns every property?
