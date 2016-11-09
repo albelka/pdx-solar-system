@@ -228,13 +228,19 @@ $(document).ready(function() {
     }
     //create map object
     var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-
+    //OMSI icon object
+    var imageOMSI = {
+      url: "img/small-icons/sun-icon.png",
+      size: new google.maps.Size(25, 25),
+      origin: new google.maps.Point(0,0),
+      anchor: new google.maps.Point(0, 25)
+    };
     //OMSI marker object
     var markerOMSI = new google.maps.Marker({
       position: new google.maps.LatLng(45.5084, -122.666),
       map: map,
       title: "OMSI",
-      icon: "img/small-icons/sun-icon.png"
+      icon: imageOMSI
     });
     var omsiString = "I am a mass of incandescent gas, a gigantic nuke-lee-ear furnace!";
     var omsiInfoWindow = new google.maps.InfoWindow({
@@ -249,8 +255,8 @@ $(document).ready(function() {
       position: new google.maps.LatLng(45.5094, -122.666916),
       map: map,
       title: "Mercury",
-      icon: "img/small-icons/mercury-icon.png"
-
+      icon: "img/small-icons/mercury-icon.png",
+      anchor: new google.maps.Point(12, 12),
     });
     var mercuryString = "";
     var mercuryInfoWindow = new google.maps.InfoWindow({
@@ -392,8 +398,6 @@ $(document).ready(function() {
       map: map,
       title: "Pluto",
       icon: "img/small-icons/pluto-icon.png"
-
-
     });
     var plutoString = "I was not discovered until 1930.";
     var plutoInfoWindow = new google.maps.InfoWindow({
