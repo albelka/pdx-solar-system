@@ -1,3 +1,10 @@
+/*.directions-hidden {
+  display: auto;
+}*/
+#intro {
+  color: white;
+}
+
 .planets-navbar img {
   max-width: 100px;
   max-height: 100px;
@@ -71,6 +78,10 @@ display: none;
 
 #moon-hidden {
   display: none;
+}
+
+img {
+  max-width: 75%;
 }
 
 /*#map {
