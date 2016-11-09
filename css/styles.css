@@ -10,13 +10,15 @@ h1 {
 
 body {
   background-color: black;
-  color: white;
 }
 
 .planets-hidden {
   display: none;
 }
-
+.planets-hidden p,
+.planets-hidden h3 {
+  color: white;
+}
 #map {
   height: 500px;
   width: 500px;
