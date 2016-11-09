@@ -75,6 +75,10 @@ display: none;
   display: none;
 }
 
+img {
+  max-width: 75%;
+}
+
 /*#map {
   background-image: url("../img/PDXmap.png");
   height: 600px;

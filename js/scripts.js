@@ -443,98 +443,79 @@ $(document).ready(function() {
 //frontend
 
   $("#sun-navbar").click(function() {
-    $(".planets-hidden").fadeOut(2000, function(){
-      $("#sun-hidden").fadeIn(2000);
-      $("#map").show();
-      myMap();
-      });
+    $(".planets-hidden").hide();
+      $("#sun-hidden, #sun-hidden-img").fadeIn(2000);
     });
 
   $("#mercury-navbar").click(function() {
-    $(".planets-hidden").fadeOut(2000, function(){
-      $("#mercury-hidden").fadeIn(2000);
-      $("#map").show();
-      myMap();
-      });
+    $(".planets-hidden").hide();
+    $("#mercury-hidden").fadeIn(2000);
+      $("#mercury-hidden-img").fadeIn(2000);
     });
 
   $("#venus-navbar").click(function() {
-    $(".planets-hidden").fadeOut(2000, function(){
+    $(".planets-hidden").hide();
     $("#venus-hidden").fadeIn(2000);
-    $("#map").show();
-    myMap();
-    });
+    $("#venus-hidden-img").fadeIn(2000);
   });
 
   $("#earth-navbar").click(function() {
-    $(".planets-hidden").fadeOut(2000, function(){
+    $(".planets-hidden").hide();
     $("#earth-hidden").fadeIn(2000);
-    $("#map").show();
-    myMap();
-    });
+    $("#earth-hidden-img").fadeIn(2000);
   });
 
   $("#mars-navbar").click(function() {
-    $(".planets-hidden").fadeOut(2000, function(){
+    $(".planets-hidden").hide();
     $("#mars-hidden").fadeIn(2000);
-    $("#map").show();
-    myMap();
-    });
+    $("#mars-hidden-img").fadeIn(2000);
   });
 
   $("#jupiter-navbar").click(function() {
-    $(".planets-hidden").fadeOut(2000, function(){
+    $(".planets-hidden").hide();
     $("#jupiter-hidden").fadeIn(2000);
-    $("#map").show();
-    myMap();
-    });
+    $("#jupiter-hidden-img").fadeIn(2000);
   });
 
   $("#saturn-navbar").click(function() {
-    $(".planets-hidden").fadeOut(2000, function(){
+    $(".planets-hidden").hide();
     $("#saturn-hidden").fadeIn(2000);
-    $("#map").show();
-    myMap();
-    });
+    $("#saturn-hidden-img").fadeIn(2000);
   });
 
   $("#uranus-navbar").click(function() {
-    $(".planets-hidden").fadeOut(2000, function(){
+    $(".planets-hidden").hide();
     $("#uranus-hidden").fadeIn(2000);
-    $("#map").show();
-    myMap();
-    });
+    $("#uranus-hidden-img").fadeIn(2000);
   });
 
   $("#neptune-navbar").click(function() {
-    $(".planets-hidden").fadeOut(2000, function(){
+    $(".planets-hidden").hide();
     $("#neptune-hidden").fadeIn(2000);
-    $("#map").show();
-    myMap();
-    });
+    $("#neptune-hidden-img").fadeIn(2000);
   });
 
   $("#pluto-navbar").click(function() {
-    $(".planets-hidden").fadeOut(2000, function(){
+    $(".planets-hidden").hide();
     $("#pluto-hidden").fadeIn(2000);
-    $("#map").show();
-    myMap();
-    });
+    $("#pluto-hidden-img").fadeIn(2000);
   });
 
   $("#moon-navbar").click(function() {
-    $(".planets-hidden").fadeOut(2000, function(){
+    $(".planets-hidden").hide();
     $("#moon-hidden").fadeIn(2000);
-    $("#map").show();
-    myMap();
-    });
+    $("#moon-hidden-img").fadeIn(2000);
   });
 
   $("#ismene-navbar").click(function() {
-    $(".planets-hidden").fadeOut(2000, function(){
+    $(".planets-hidden").hide();
     $("#ismene-hidden").fadeIn(2000);
+    $("#ismene-hidden-img").fadeIn(2000);
+  });
+
+  $("#button-sun").click(function() {
+    $("#sun-hidden, #sun-hidden-img").hide();
     $("#map").show();
     myMap();
-    });
   });
 });

@@ -38,9 +38,9 @@
             <img src="img/earth.jpg" alt="an image of the earth" title="Earth">
           </div>
 
-          <div class="col-md-1" id="moon-navbar">
+          <!-- <div class="col-md-1" id="moon-navbar">
             <img src="img/moon.jpg" alt="an image of the moon" title="Moon">
-          </div>
+          </div> -->
 
           <div class="col-md-1" id="mars-navbar">
             <img src="img/mars.jpg" alt="an image of mars" title="Mars">
@@ -86,7 +86,7 @@
             <p>Distance to Earth: 93 million miles from the Sun to the Earth.</p>
             <p>Facts: The largest object in our Solar System, the Sun accounts for more than 98.86% of the mass in our Solar System.</p>
             <p>Location: The orange chimney at OMSI.</p>
-            <button class="btn btn-warning showmap">Click here to see a map!</button>
+            <button class="btn btn-warning showmap" id="button-sun">Click here to see a map!</button>
 
           </div>
         <div class="planets-hidden" id="mercury-hidden">
@@ -101,7 +101,7 @@
           <p>Location: In this model Mercury is located 380 feet north of OMSI on a Bridge pylon along the river.</p>
           <p>Symbol: Mercury is a 1/3-inch diameter hematite.</p>
           <p>Distance from OMSI: 380 feet.</p>
-          <button class="btn btn-warning showmap">Click here to see a map!</button>
+          <button class="btn btn-warning showmap" id="button-mercury">Click here to see a map!</button>
 
         </div>
         <div class="planets-hidden" id="venus-hidden">
@@ -116,7 +116,7 @@
           <p>Location: Venus is located 710 feet north of OMSI on a bridge pylon at the north end of the OMSI parking lot.</p>
           <p>Symbol: Venus is represented by a brown Turquoise.</p>
           <p>Distance from OMSI: Venus is 710 feet from OMSI.</p>
-          <button class="btn btn-warning showmap">Click here to see a map!</button>
+          <button class="btn btn-warning showmap" id="button-venus">Click here to see a map!</button>
 
         </div>
         <div class="planets-hidden" id="earth-hidden">
@@ -132,7 +132,7 @@
           <p>Location: In this model Earth is located 984 feet north of OMSI. It is beyond the maintenance building north of OMSI, on a bridge pylon next to the asphalt road that runs through the gravel parking lot. To see the Sun, step back across the asphalt road.</p>
           <p>Symbol: Earth is a 1” diameter Turquoise. The Moon is a ¼-inch diameter Pietersite located 30-inches to the right of Earth.</p>
           <p>Distance from OMSI: 984 feet from OMSI.</p>
-          <button class="btn btn-warning showmap">Click here to see a map!</button>
+          <button class="btn btn-warning showmap" id="button-earth">Click here to see a map!</button>
 
         </div>
         <div class="planets-hidden" id="moon-hidden">
@@ -155,7 +155,7 @@
           <p>Location: Mars is located 1,500 feet north of OMSI along the footpath next to the Willamette River.</p>
           <p>Symbol: Mars is a ½-inch diameter Rutilated Quartz.</p>
           <p>Distance from the Sun: 1,500 from OMSI</p>
-          <button class="btn btn-warning showmap">Click here to see a map!</button>
+          <button class="btn btn-warning showmap" id="button-mars">Click here to see a map!</button>
 
         </div>
         <div class="planets-hidden" id="jupiter-hidden">
@@ -171,7 +171,7 @@
           <p>Location: About a mile north of OMSI, about 100 yards before the Burnside Bridge stairs, on your right you will find Jupiter.</p>
           <p>Symbol: Jupiter is an 11 1/4–inch concrete sphere. To see the sun, a mile away, climb the stairs to the Burnside Bridge, about 100 yards north of Jupiter.</p>
           <p>Distance from OMSI: One mile</p>
-          <button class="btn btn-warning showmap">Click here to see a map!</button>
+          <button class="btn btn-warning showmap" id="button-jupiter">Click here to see a map!</button>
 
         </div>
         <div class="planets-hidden" id="saturn-hidden">
@@ -186,7 +186,7 @@
           <p>Location: Go south on Macadam Boulevard through Johns Landing. Get off the bus or turn left at Nebraska St. to enter Willamette Park. As you enter the park, go to the right and find the parking lot and boat ramp. To the left of the boat ramp, behind the “Landscaping for Clean Rivers” garden, on a tall wooden pole, you’ll see Saturn.</p>
           <p>Symbol: A concrete sphere.</p>
           <p>Distance from OMSI: The Sun can be seen 1 ½ miles away</p>
-          <button class="btn btn-warning showmap">Click here to see a map!</button>
+          <button class="btn btn-warning showmap" id="button-saturn">Click here to see a map!</button>
 
         </div>
         <div class="planets-hidden" id="ismene-hidden">
@@ -197,7 +197,7 @@
           <p>Location: 4,000 feet from the Sun</p>
           <p>Symbol: A brass plate 2 inches in diameter</p>
           <p>Location: The brass plate is next to the entrance at 707 SE 12th, just north of Belmont SE. It may be covered with leaves or grass.  It is about halfway to Uranus, on the north side.</p>
-          <button class="btn btn-warning showmap">Click here to see a map!</button>
+          <button class="btn btn-warning showmap" id="button-ismene">Click here to see a map!</button>
 
         </div>
         <div class="planets-hidden" id="uranus-hidden">
@@ -212,7 +212,7 @@
           <p>Location: Walk or drive up 69th st. to Mount Tabor Park( closed to vehicles on Wednesday), turn right and go up the hill to the stop, left at the stop sign, wind your way past the playground to a parking spot. Leave your car, go up the stairs to the left of the parking lot to the non-vehicle road at the top of Mount Tabor. Go to the right, and you will find Uranus on the third pole, overlooking Portland.</p>
           <p>Symbol: Uranus is a 4-inch concrete sphere.</p>
           <p>Distance from OMSI: The Sun at OMSI can be seen 3 ½ miles away.</p>
-          <button class="btn btn-warning showmap">Click here to see a map!</button>
+          <button class="btn btn-warning showmap" id="button-uranus">Click here to see a map!</button>
 
         </div>
 
@@ -242,22 +242,22 @@
           <p>Location: Leave Rocky Butte on the road 100 yards to the right of the one you arrived on. This road will get you back to Fremont and the 33 bus. Head west on Fremont, through some recently revitalized neighborhoods. After about 5 miles, go right on Williams(bus #40), left on Killingsworth, right on Vancouver, and left on Portland Blvd. Follow Portland Ave to the end and go right on Willamette Blvd. It curves around the bluff above the Swan Island Shipyards, and turns right at the University of Portland. Enter at the main entrance, and try to find a parking spot near the bluff. Walk on the grass towards the west and find the gazebo next to the small, observatory building. Inside the gazebo is Pluto and Charon.</p>
           <p>Symbol: Chrysoprase.</p>
           <p>Distance from OMSI: Approximately 6.5 miles</p>
-          <button class="btn btn-warning showmap">Click here to see a map!</button>
+          <button class="btn btn-warning showmap" id="button-pluto">Click here to see a map!</button>
         </div>
       </div>
       <div class="col-xs-8" >
-        <img src="img/sun.png" class="planets-hidden" id="sun-hidden" alt="an image of the sun" title="Sun">
-        <img src="img/mercury.jpg" class="planets-hidden" id="mercury-hidden" alt="an image of mercury" title="Mercury">
-        <img src="img/venus.jpg" class="planets-hidden" id="venus-hidden" alt="an image of venus" title="Venus">
-        <img src="img/earth.jpg" class="planets-hidden" id="earth-hidden" alt="an image of the earth" title="Earth">
-        <img src="img/moon.jpg" alt="an image of the moon" id="moon-hidden" class="planets-hidden" title="Moon">
-        <img src="img/mars.jpg" class="planets-hidden" id="mars-hidden" alt="an image of mars" title="Mars">
-        <img src="img/jupiter.png" alt="an image of jupiter" id="jupiter-hidden" class="planets-hidden" title="Jupiter">
-        <img src="img/saturn.jpg" class="planets-hidden" id="saturn-hidden" alt="an image of saturn" title="Saturn">
-        <img src="img/ismene.jpg" class="planets-hidden" id="ismene-hidden" alt="an image of ismene asteroid" title="Ismene">
-        <img src="img/uranus.jpg" class="planets-hidden" id="uranus-hidden" alt="an image of uranus" title="Uranus">
-        <img src="img/neptune.jpg" class="planets-hidden" id="neptune-hidden" alt="an image of neptune" title="Neptune">
-        <img src="img/pluto.jpg" class="planets-hidden" id="pluto-hidden" alt="an image of pluto" title="Pluto">
+        <img src="img/sun.png" class="planets-hidden" id="sun-hidden-img" alt="an image of the sun" title="Sun">
+        <img src="img/mercury.jpg" class="planets-hidden" id="mercury-hidden-img" alt="an image of mercury" title="Mercury">
+        <img src="img/venus.jpg" class="planets-hidden" id="venus-hidden-img" alt="an image of venus" title="Venus">
+        <img src="img/earth.jpg" class="planets-hidden" id="earth-hidden-img" alt="an image of the earth" title="Earth">
+        <img src="img/moon.jpg" class="planets-hidden" id="moon-hidden-img"  alt="an image of the moon"  title="Moon">
+        <img src="img/mars.jpg" class="planets-hidden" id="mars-hidden-img" alt="an image of mars" title="Mars">
+        <img src="img/jupiter.png" alt="an image of jupiter" id="jupiter-hidden-img" class="planets-hidden" title="Jupiter">
+        <img src="img/saturn.jpg" class="planets-hidden" id="saturn-hidden-img" alt="an image of saturn" title="Saturn">
+        <img src="img/ismene.jpg" class="planets-hidden" id="ismene-hidden-img" alt="an image of ismene asteroid" title="Ismene">
+        <img src="img/uranus.jpg" class="planets-hidden" id="uranus-hidden-img" alt="an image of uranus" title="Uranus">
+        <img src="img/neptune.jpg" class="planets-hidden" id="neptune-hidden-img" alt="an image of neptune" title="Neptune">
+        <img src="img/pluto.jpg" class="planets-hidden" id="pluto-hidden-img" alt="an image of pluto" title="Pluto">
 
         <div class="container" id="map">
         </div>
