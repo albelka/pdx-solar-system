@@ -19,7 +19,7 @@ body {
 }
 
 .navbar {
-  width: 100%;
+  padding: 3px;
 }
 
 .navbar:hover {
@@ -43,19 +43,24 @@ body {
   display: none;
   width: 100%;
 }
+
+.planets-hidden img {
+  width: 75%;
+}
+
 .planets-hidden p,
 .planets-hidden h3 {
   color: white;
 }
 
-#intro {
+.intro {
   color: white;
+  font-size: 16pt;
 }
-
 
 #map {
   height: 500px;
-  width: 100%;
+  width: 75%;
 display: none;
 }
 

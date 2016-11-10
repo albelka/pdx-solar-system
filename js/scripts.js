@@ -191,7 +191,7 @@ $(document).ready(function() {
   $("#sun-navbar").click(function() {
     $(".planets-hidden").hide();
     $(".directions-hidden").hide();
-    $("#intro").hide();
+    $(".intro").hide();
     $("#map").hide();
     $("#sun-hidden, #sun-hidden-img").fadeIn(2000);
     });
@@ -199,7 +199,7 @@ $(document).ready(function() {
   $("#mercury-navbar").click(function() {
     $(".planets-hidden").hide();
     $(".directions-hidden").hide();
-    $("#intro").hide();
+    $(".intro").hide();
     $("#map").hide();
     $("#mercury-hidden").fadeIn(2000);
     $("#mercury-hidden-img").fadeIn(2000);
@@ -208,7 +208,7 @@ $(document).ready(function() {
   $("#venus-navbar").click(function() {
     $(".planets-hidden").hide();
     $(".directions-hidden").hide();
-    $("#intro").hide();
+    $(".intro").hide();
     $("#map").hide();
     $("#venus-hidden").fadeIn(2000);
     $("#venus-hidden-img").fadeIn(2000);
@@ -217,7 +217,7 @@ $(document).ready(function() {
   $("#earth-navbar").click(function() {
     $(".planets-hidden").hide();
     $(".directions-hidden").hide();
-    $("#intro").hide();
+    $(".intro").hide();
     $("#map").hide();
     $("#earth-hidden").fadeIn(2000);
     $("#earth-hidden-img").fadeIn(2000);
@@ -226,7 +226,7 @@ $(document).ready(function() {
   $("#mars-navbar").click(function() {
     $(".planets-hidden").hide();
     $(".directions-hidden").hide();
-    $("#intro").hide();
+    $(".intro").hide();
     $("#map").hide();
     $("#mars-hidden").fadeIn(2000);
     $("#mars-hidden-img").fadeIn(2000);
@@ -235,7 +235,7 @@ $(document).ready(function() {
   $("#jupiter-navbar").click(function() {
     $(".planets-hidden").hide();
     $(".directions-hidden").hide();
-    $("#intro").hide();
+    $(".intro").hide();
     $("#map").hide();
     $("#jupiter-hidden").fadeIn(2000);
     $("#jupiter-hidden-img").fadeIn(2000);
@@ -244,7 +244,7 @@ $(document).ready(function() {
   $("#saturn-navbar").click(function() {
     $(".planets-hidden").hide();
     $(".directions-hidden").hide();
-    $("#intro").hide();
+    $(".intro").hide();
     $("#map").hide();
     $("#saturn-hidden").fadeIn(2000);
     $("#saturn-hidden-img").fadeIn(2000);
@@ -253,7 +253,7 @@ $(document).ready(function() {
   $("#uranus-navbar").click(function() {
     $(".planets-hidden").hide();
     $(".directions-hidden").hide();
-    $("#intro").hide();
+    $(".intro").hide();
     $("#map").hide();
     $("#uranus-hidden").fadeIn(2000);
     $("#uranus-hidden-img").fadeIn(2000);
@@ -262,7 +262,7 @@ $(document).ready(function() {
   $("#neptune-navbar").click(function() {
     $(".planets-hidden").hide();
     $(".directions-hidden").hide();
-    $("#intro").hide();
+    $(".intro").hide();
     $("#map").hide();
     $("#neptune-hidden").fadeIn(2000);
     $("#neptune-hidden-img").fadeIn(2000);
@@ -271,7 +271,7 @@ $(document).ready(function() {
   $("#pluto-navbar").click(function() {
     $(".planets-hidden").hide();
     $(".directions-hidden").hide();
-    $("#intro").hide();
+    $(".intro").hide();
     $("#map").hide();
     $("#pluto-hidden").fadeIn(2000);
     $("#pluto-hidden-img").fadeIn(2000);
@@ -280,7 +280,7 @@ $(document).ready(function() {
   $("#ismene-navbar").click(function() {
     $(".planets-hidden").hide();
     $(".directions-hidden").hide();
-    $("#intro").hide();
+    $(".intro").hide();
     $("#map").hide();
     $("#ismene-hidden").fadeIn(2000);
     $("#ismene-hidden-img").fadeIn(2000);
@@ -289,7 +289,7 @@ $(document).ready(function() {
   $("#map-navbar").click(function() {
     $(".planets-hidden").hide();
     $(".directions-hidden").hide();
-    $("#intro").hide();
+    $(".intro").hide();
     $("#map").fadeIn(2000);
     myMap();
   });

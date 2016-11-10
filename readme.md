@@ -2,11 +2,13 @@
 
 #### _An informative site that helps the user explore Portland while learning about the solar system, 11.8.16_
 
-#### By _**Michael Andrade, Anne Belka, Adam B, and Quinn Schwartz**_
+#### By _**Michael Andrade, Anne Belka, Adam Baker, and Quinn Schwartz**_
 
 ## Description
 
-_Back in the day, the Oregon Museum of Science and Industry built a scale model of the solar system, with planets spread across the Portland city limits. We have created a new site to document what remains of these models, along with information on the originals._
+_Back in the day, the Oregon Museum of Science and Industry built a scale model of the solar system, with planets spread across the Portland city limits. We have created a new site to document what remains of these models, along with information on the originals.
+
+Published at _
 
 ## Specifications
 
@@ -51,4 +53,4 @@ _Written with Jquery 3.1.1, bootstrap 3, and CSS3_
 
 *MIT*
 
-Copyright (c) 2016 **_Michael Andrade, Anne Belka, Adam B, Quinn Schwartz_**
+Copyright (c) 2016 **_Michael Andrade, Anne Belka, Adam Baker, Quinn Schwartz_**
