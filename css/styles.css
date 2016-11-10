@@ -53,8 +53,9 @@ body {
   color: white;
 }
 
-#intro {
+.intro {
   color: white;
+  font-size: 16pt;
 }
 
 #map {
