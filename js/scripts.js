@@ -1,7 +1,3 @@
-//backend
-
-
-//fullstats function that returns every property?
 
 //frontend
 $(document).ready(function() {
@@ -288,6 +284,14 @@ $(document).ready(function() {
     $("#map").hide();
     $("#ismene-hidden").fadeIn(2000);
     $("#ismene-hidden-img").fadeIn(2000);
+  });
+
+  $("#map-navbar").click(function() {
+    $(".planets-hidden").hide();
+    $(".directions-hidden").hide();
+    $("#intro").hide();
+    $("#map").fadeIn(2000);
+    myMap();
   });
 
 
