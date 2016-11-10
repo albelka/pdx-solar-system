@@ -1,6 +1,7 @@
-/*.directions-hidden {
+.directions-hidden {
   display: none;
-}*/
+  color: white;
+}
 #intro {
   color: white;
 }
@@ -26,6 +27,7 @@ body {
 .planets-hidden h3 {
   color: white;
 }
+
 #map {
   height: 500px;
   width: 500px;
