@@ -375,7 +375,7 @@ $(document).ready(function() {
   $("#button-ismene").click(function() {
     $("#ismene-hidden-img").hide();
     $("#ismene-hidden").hide();
-    $("#ismene-hidden-img").fadeIn(2000);
+    $("#ismene-directions-hidden").fadeIn(2000);
     $("#map").fadeIn(2000);
     myMap();
   });

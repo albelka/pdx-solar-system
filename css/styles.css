@@ -1,4 +1,18 @@
 
+
+.container {
+  padding-left: 25px;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+  font-size: 12pt;
+}
+
+a {
+  color: green;
+}
+
 .directions-hidden {
   display: none;
   color: white;
@@ -16,6 +30,8 @@
 h1 {
   color: green;
   text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bold;
 }
 
 body {
