@@ -2,11 +2,11 @@
 
 #### _An informative site that helps the user explore Portland while learning about the solar system, 11.8.16_
 
-#### By _**{List of contributors}**_
+#### By _**Michael Andrade, Anne Belka, Adam B, and Quinn Schwartz**_
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_Back in the day, the Oregon Museum of Science and Industry built a scale model of the solar system, with planets spread across the Portland city limits. We have created a new site to document what remains of these models, along with information on the originals._
 
 ## Specifications
 
@@ -37,18 +37,18 @@ _{This is a detailed description of your application. Its purpose and usage.  Gi
 
 ## Known Bugs
 
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
+_No known bugs_
 
 ## Support and contact details
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+_For questions and comments, contact any of the contributors through Github._
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+_Written with Jquery 3.1.1, bootstrap 3, and CSS3_
 
 ### License
 
 *MIT*
 
-Copyright (c) 2016 **_{List of contributors or company name}_**
+Copyright (c) 2016 **_Michael Andrade, Anne Belka, Adam B, Quinn Schwartz_**
